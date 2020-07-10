@@ -9,19 +9,19 @@ export const Footer = () => {
           <h5>Links</h5>
           <ul className="list-unstyled">
             <li> <Link to="/"><span className="fa fa-home fa-lg"></span> </Link></li>
-            <li> <Link to="/menu"><span className="fa fa-info fa-lg"></span> </Link></li>
+            <li> <Link to="/employee"><span className="fa fa-user fa-lg"></span> </Link></li>
           </ul>
         </div>
         <div className="col-7 col-sm-5">
           <h5>Our Address</h5>
           <address>
-            121, Clear Water Bay Road<br />
-            Clear Water Bay, Kowloon<br />
-            HONG KONG<br />
-            <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+            Digital Transformation Center<br />
+            MAsr Elgedida , Cairo<br />
+            Egypt<br />
+            <i className="fa fa-phone fa-lg"></i>: 01111343463<br />
             <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-            <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
-            confusion@food.net</a>
+            <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:m.yassen.93@gmail.com">
+            Contact US</a>
           </address>
         </div>
         <div className="col-12 col-sm-4 align-self-center">
@@ -37,7 +37,7 @@ export const Footer = () => {
       </div>
       <div className="row justify-content-center">
         <div className="col-auto">
-          <p>© Copyright 2018  DTC</p>
+          <p>© Copyright 2020  DTC</p>
         </div>
       </div>
     </div>
