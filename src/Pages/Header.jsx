@@ -13,7 +13,8 @@ collapseOpen = () => {
 };
 
     render() {
-return (<React.Fragment>
+return (
+    <React.Fragment>
 <Navbar  color="light" light expand="md">
     <div className="container">
         <NavbarToggler onClick={this.collapseOpen}/>
@@ -41,16 +42,20 @@ return (<React.Fragment>
                         <DropdownItem>
                             <NavLink className="nav-link" to="/iotandgis">
                                 <span className="fa fa-map"></span>  IOT & GIS
+                                <span className="badge badge-light">{this.props.iot}</span>
                             </NavLink>
                         </DropdownItem>
                         <DropdownItem>
                             <NavLink to='/developers' className="nav-link">
                                 <span className="fa fa-mobile"></span>  Developers
+                                <span className="badge badge-light">{this.props.dev}</span>
+
                             </NavLink>
                         </DropdownItem>
                         <DropdownItem>
                             <NavLink to='/networks' className="nav-link">
                                 <span className="fa fa-laptop"></span>  Network Security
+                                <span className="badge badge-light">{this.props.net}</span>
                             </NavLink>
                         </DropdownItem>
                     </DropdownMenu>

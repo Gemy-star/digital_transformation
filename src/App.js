@@ -27,7 +27,7 @@ super (props);
 render() {
     return (
         <React.Fragment>
-        <Header/>
+        <Header iot={this.state.IotAndGis.length}  dev={this.state.Developers.length} net={ this.state.networks.length}/>
       <Switch>
           <Route path="/networks" component={() => <Emp_Dep employees={this.state.networks}/>} />
           <Route path="/developers" component={() => <Emp_Dep employees={this.state.Developers}/>} />
