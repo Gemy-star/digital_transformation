@@ -13,7 +13,7 @@ class EmployeeInfo extends Component {
     };
   }
 
-  handleClick = (employee) => {
+  handleClick = (employee ) => {
     this.setState(
       { clickedEmployee: employee, showEmployee: !this.state.showEmployee },
       () => {
