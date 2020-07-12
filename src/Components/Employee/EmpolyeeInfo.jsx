@@ -13,13 +13,10 @@ class EmployeeInfo extends Component {
     };
   }
 
-  handleClick = (employee ) => {
+  handleClick = (employee , history) => {
     this.setState(
-      { clickedEmployee: employee, showEmployee: !this.state.showEmployee },
-      () => {
-        console.log(this.state.clickedEmployee, this.state.showEmployee);
-      }
-    );
+      { clickedEmployee: employee, showEmployee: !this.state.showEmployee });
+     history.push({pathname:'/employee/'+employee.id})
   };
   handleChange = (event) => {
     this.setState({ searchText: event.target.value });
@@ -50,6 +47,7 @@ class EmployeeInfo extends Component {
                 employee={e}
                 onClick={this.handleClick}
                 Delete={this.handleDelete}
+                history={this.props.history}
               />
             );
           })}

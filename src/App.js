@@ -18,6 +18,26 @@ super (props);
     }
 
 }
+Employee = ({history}) => {
+    return (
+      <EmployeeInfo employees={this.state.employees} history={history}   />
+    );
+};
+DevEmp = ({history}) => {
+    return (
+      <Emp_Dep employees={this.state.Developers} history={history} />
+    );
+};
+    NetEmp = ({history}) => {
+        return (
+            <Emp_Dep employees={this.state.networks} history={history} />
+        );
+    };
+    IOTEmp = ({history}) => {
+        return (
+            <Emp_Dep employees={this.state.IotAndGis} history={history} />
+        );
+    };
     componentDidMount() {
         fetch('https://dtcdashboard.pythonanywhere.com/api/v1/employee/')
             .then((res) => res.json())
@@ -25,7 +45,7 @@ super (props);
                 Developers: employee.filter(emp => emp.department === "Developers") , networks:employee.filter(emp => emp.department === "Network Security")
             }));
     }
-    EmployeeId = ({match})=> {
+    EmployeeId = ({match}) => {
     return(
       <EmployeeID employees={this.state.employees} match={match} />
     );
@@ -35,11 +55,11 @@ render() {
         <React.Fragment>
         <Header iot={this.state.IotAndGis.length}  dev={this.state.Developers.length} net={ this.state.networks.length}/>
       <Switch>
-          <Route path="/networks" component={() => <Emp_Dep employees={this.state.networks}/>} />
+          <Route path="/networks" component={this.NetEmp} />
           <Route path="/employee/:empId" component={this.EmployeeId}/>
-          <Route path="/developers" component={() => <Emp_Dep employees={this.state.Developers}/>} />
-          <Route path="/iotandgis" component={() => <Emp_Dep employees={this.state.IotAndGis}/>}/>
-          <Route exact path='/employee' component={()=><EmployeeInfo employees={this.state.employees}/> }/>
+          <Route path="/developers" component={this.DevEmp} />
+          <Route path="/iotandgis" component={this.IOTEmp}/>
+          <Route exact path='/employee' component={this.Employee}/>
           <Route path='/' exact component={() => <Home/>}/>
           <Redirect to='/'/>
       </Switch>
