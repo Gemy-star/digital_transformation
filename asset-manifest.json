@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/digital_transformation/static/css/main.3424eee9.chunk.css",
+    "main.js": "/digital_transformation/static/js/main.75ff7ffb.chunk.js",
+    "main.js.map": "/digital_transformation/static/js/main.75ff7ffb.chunk.js.map",
+    "runtime-main.js": "/digital_transformation/static/js/runtime-main.856efe99.js",
+    "runtime-main.js.map": "/digital_transformation/static/js/runtime-main.856efe99.js.map",
+    "static/css/2.89fb7b48.chunk.css": "/digital_transformation/static/css/2.89fb7b48.chunk.css",
+    "static/js/2.1d405ea9.chunk.js": "/digital_transformation/static/js/2.1d405ea9.chunk.js",
+    "static/js/2.1d405ea9.chunk.js.map": "/digital_transformation/static/js/2.1d405ea9.chunk.js.map",
+    "index.html": "/digital_transformation/index.html",
+    "precache-manifest.deb8efa03c8286a1be810dccbe16a1c6.js": "/digital_transformation/precache-manifest.deb8efa03c8286a1be810dccbe16a1c6.js",
+    "service-worker.js": "/digital_transformation/service-worker.js",
+    "static/css/2.89fb7b48.chunk.css.map": "/digital_transformation/static/css/2.89fb7b48.chunk.css.map",
+    "static/css/main.3424eee9.chunk.css.map": "/digital_transformation/static/css/main.3424eee9.chunk.css.map",
+    "static/js/2.1d405ea9.chunk.js.LICENSE.txt": "/digital_transformation/static/js/2.1d405ea9.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/digital_transformation/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.856efe99.js",
+    "static/css/2.89fb7b48.chunk.css",
+    "static/js/2.1d405ea9.chunk.js",
+    "static/css/main.3424eee9.chunk.css",
+    "static/js/main.75ff7ffb.chunk.js"
+  ]
+}
