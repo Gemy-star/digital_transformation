@@ -5,9 +5,9 @@ import './employee.styles.css';
 const Employee = (props) => {
   return (
     <div className="card-container">
-      <Card onClick={() => props.onClick(props.employee , props.history)}>
+      <Card >
         <CardBody>
-          <CardImg src={props.employee.picture} className="profile-pic" />
+          <CardImg src={props.employee.picture} className="profile-pic" onClick={() => props.onClick(props.employee , props.history)} />
           <CardText>{props.employee.name}</CardText>
         </CardBody>
         <CardFooter>
